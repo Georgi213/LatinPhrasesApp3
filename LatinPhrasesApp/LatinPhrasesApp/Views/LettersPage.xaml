@@ -1,0 +1,158 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LatinPhrasesApp.Views.LettersPage">
+    <ScrollView>
+        <FlexLayout
+    Wrap="Wrap"
+    Direction="Row"
+    JustifyContent="SpaceAround"
+    AlignItems="Center"
+    HorizontalOptions="Center"
+    VerticalOptions="Center">
+            <Frame WidthRequest="40" HeightRequest="40" BorderColor="Black" Padding="0" CornerRadius="0">
+                <Label Text="A" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnLetterTapped" NumberOfTapsRequired="1" />
+                    </Label.GestureRecognizers>
+                </Label>
+            </Frame>
+            <Frame WidthRequest="40" HeightRequest="40" BorderColor="Black" Padding="0" CornerRadius="0">
+                <Label Text="B" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center">
+                    <Label.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="OnLetterTapped" NumberOfTapsRequired="1" />
+                    </Label.GestureRecognizers>
+                </Label>
+            </Frame>
+            <Frame WidthRequest="40" HeightRequest="40" BorderColor="Black" Padding="0" CornerRadius="0">
+                <Label Text="C" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnLetterTapped" NumberOfTapsRequired="1" />
+                </Label.GestureRecognizers>
+            </Label>
+            </Frame>
+                <Frame WidthRequest="40" HeightRequest="40" BorderColor="Black" Padding="0" CornerRadius="0">
+                <Label Text="D" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center">
+                    <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnLetterTapped" NumberOfTapsRequired="1" />
+                </Label.GestureRecognizers>
+            </Label>
+            </Frame>
+            <Frame WidthRequest="40" HeightRequest="40" BorderColor="Black" Padding="0" CornerRadius="0">
+                <Label Text="E" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center">
+                    <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnLetterTapped" NumberOfTapsRequired="1" />
+                </Label.GestureRecognizers>
+            </Label>
+            </Frame>
+            <Frame WidthRequest="40" HeightRequest="40" BorderColor="Black" Padding="0" CornerRadius="0">
+                <Label Text="F" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center">
+                    <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnLetterTapped" NumberOfTapsRequired="1" />
+                </Label.GestureRecognizers>
+            </Label>
+            </Frame>
+            <Frame WidthRequest="40" HeightRequest="40" BorderColor="Black" Padding="0" CornerRadius="0">
+                <Label Text="G" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center">
+                    <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnLetterTapped" NumberOfTapsRequired="1" />
+                </Label.GestureRecognizers>
+            </Label>
+            </Frame>
+            <Frame WidthRequest="40" HeightRequest="40" BorderColor="Black" Padding="0" CornerRadius="0">
+                <Label Text="H" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center">
+                    <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnLetterTapped" NumberOfTapsRequired="1" />
+                </Label.GestureRecognizers>
+            </Label>
+            </Frame>
+            <Frame WidthRequest="40" HeightRequest="40" BorderColor="Black" Padding="0" CornerRadius="0">
+                <Label Text="I" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center">
+                <Label.GestureRecognizers >
+                    <TapGestureRecognizer Tapped="OnLetterTapped" NumberOfTapsRequired="1" />
+                </Label.GestureRecognizers>
+            </Label>
+            </Frame>
+
+            <Frame WidthRequest="40" HeightRequest="40" BorderColor="Black" Padding="0" CornerRadius="0">
+                <Label Text="L" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center">
+                    <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnLetterTapped" NumberOfTapsRequired="1" />
+                </Label.GestureRecognizers>
+            </Label>
+            </Frame>
+            <Frame WidthRequest="40" HeightRequest="40" BorderColor="Black" Padding="0" CornerRadius="0">
+                <Label Text="M" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center">
+                    <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnLetterTapped" NumberOfTapsRequired="1" />
+                </Label.GestureRecognizers>
+            </Label>
+            </Frame>
+            <Frame WidthRequest="40" HeightRequest="40" BorderColor="Black" Padding="0" CornerRadius="0">
+                <Label Text="N" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center">
+                    <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnLetterTapped" NumberOfTapsRequired="1" />
+                </Label.GestureRecognizers>
+            </Label>
+            </Frame>
+            <Frame WidthRequest="40" HeightRequest="40" BorderColor="Black" Padding="0" CornerRadius="0">
+                <Label Text="O" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center">
+                    <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnLetterTapped" NumberOfTapsRequired="1" />
+                </Label.GestureRecognizers>
+            </Label>
+            </Frame>
+            <Frame WidthRequest="40" HeightRequest="40" BorderColor="Black" Padding="0" CornerRadius="0">
+                <Label Text="P" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center">
+                    <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnLetterTapped" NumberOfTapsRequired="1" />
+                </Label.GestureRecognizers>
+            </Label>
+            </Frame>
+            <Frame WidthRequest="40" HeightRequest="40" BorderColor="Black" Padding="0" CornerRadius="0">
+                <Label Text="Q" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center">
+                    <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnLetterTapped" NumberOfTapsRequired="1" />
+                </Label.GestureRecognizers>
+            </Label>
+            </Frame>
+            <Frame WidthRequest="40" HeightRequest="40" BorderColor="Black" Padding="0" CornerRadius="0">
+                <Label Text="R" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center">
+
+                    <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnLetterTapped" NumberOfTapsRequired="1" />
+                </Label.GestureRecognizers>
+            </Label>
+            </Frame>
+            <Frame WidthRequest="40" HeightRequest="40" BorderColor="Black" Padding="0" CornerRadius="0">
+                <Label Text="S" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center">
+                    <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnLetterTapped" NumberOfTapsRequired="1" />
+                </Label.GestureRecognizers>
+            </Label>
+            </Frame>
+            <Frame WidthRequest="40" HeightRequest="40" BorderColor="Black" Padding="0" CornerRadius="0">
+                <Label Text="T" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center">
+                <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnLetterTapped" NumberOfTapsRequired="1" />
+                </Label.GestureRecognizers>
+            </Label>
+            </Frame>
+            <Frame WidthRequest="40" HeightRequest="40" BorderColor="Black" Padding="0" CornerRadius="0">
+                <Label Text="U" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center">
+                    <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnLetterTapped" NumberOfTapsRequired="1" />
+                </Label.GestureRecognizers>
+            </Label>
+            </Frame>
+            <Frame WidthRequest="40" HeightRequest="40" BorderColor="Black" Padding="0" CornerRadius="0">
+                                                                            <!-- Add more letter labels here -->
+                <Label Text="V" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center">
+                    <Label.GestureRecognizers>
+                    <TapGestureRecognizer Tapped="OnLetterTapped" NumberOfTapsRequired="1" />
+                </Label.GestureRecognizers>
+            </Label>
+            </Frame>
+        </FlexLayout>
+    </ScrollView>
+</ContentPage>

@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:views="clr-namespace:LatinPhrasesApp.Views"
+             xmlns:behaviors="clr-namespace:LatinPhrasesApp.Behaviors"
+             x:Class="LatinPhrasesApp.Views.FavoriteLatinPhrasesPage"
+              xmlns:local="clr-namespace:LatinPhrasesApp"
+             Title="Lemmikud"
+              x:Name="ThisPage"
+             BackgroundColor="White"           >
+
+
+    <ContentPage.Content>
+        <ScrollView RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                    RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
+            <StackLayout>
+                <Label Text="Lemmik ladinakeelsed fraasid"
+                   FontSize="Large"
+                   FontAttributes="Bold"
+                   HorizontalOptions="Center"
+                   Margin="0,20,0,0" />
+
+            <ListView ItemsSource="{Binding FavoritePhrases}" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Image Source="papyrus2.jpg" Aspect="AspectFill" />
+                                <Grid Padding="10">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                    <Button Grid.Column="0" Margin="130,0,0,0" Text="&#x2764;" FontSize="27" BackgroundColor="transparent"
+            Command="{Binding BindingContext.RemoveFavoriteCommand, Source={x:Reference Name=ThisPage}}"
+            CommandParameter="{Binding .}">
+                                        <Button.Behaviors>
+                                            <behaviors:HeartButtonBehavior />
+                                        </Button.Behaviors>
+                                    </Button>
+
+                                    <StackLayout Grid.Column="1">
+                                        <Label Text="{Binding Latin}" FontAttributes="Bold" FontSize="15" Margin="-98,0,0,0"/>
+                                        <Label Text="{Binding Estonian}" LineBreakMode="WordWrap" WidthRequest="200" FontSize="14"  Margin="-105,0,0,0"/>
+                                    </StackLayout>
+                                    <ImageButton Grid.Column="2" Margin="45,-10,0,60" Source="share_icon.png" WidthRequest="24" HeightRequest="24" BackgroundColor="Transparent"
+        Command="{Binding BindingContext.ShareCommand, Source={x:Reference Name=ThisPage}}"
+        CommandParameter="{Binding .}" />
+                                </Grid>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+        
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

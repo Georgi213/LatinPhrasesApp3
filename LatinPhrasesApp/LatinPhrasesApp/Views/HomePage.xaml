@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LatinPhrasesApp.Views.HomePage">
+    <Grid >
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+
+        <Image x:Name="PapyrusImage" Source="papyrus1.jpg" Aspect="AspectFill" />
+
+        <ScrollView Grid.Row="0" Padding="30">
+          
+            <StackLayout >
+
+                
+                <Label Text="Ladina keele päritolu"
+                       FontSize="30"
+                       FontAttributes="Bold"
+                       TextColor="Black"
+                       Opacity="0.8"
+                       HorizontalOptions="Start"
+                       Margin="0,30,0,0"/>
+
+                <Label Text="Ladina keel on latiinlaste keel, iidsed Latiumi asukad, kes asustasid väikest Kesk-Itaalia piirkonda. Latiumi ja Etruria piiril Tiberi jõe kohal asus Rooma, mis asutati legendi järgi aastal 753r. eKr e Kuigi Rooma kogukonda kuulus erinevaid hõime, jäi rahvusvahelise suhtluse kõne ladinakeelseks. Seejärel vallutas Rooma Kreeka, Gallia, osa Pürenee poolsaarest, Põhja-Aafrika, Väike-Aasia, Egiptuse ja teised maad. Ladina keel ulatus Apenniini poolsaarest kaugemale ja levis Lääne-Euroopasse.
+II pool III - II sajand. eKr AD - see on ladina kirjakeele, mida nimetatakse arhailiseks ladinaks, väljakujunemise periood. Selle perioodi teostest Plautuse (umbes 253 - 184 eKr), Terence'i (185 - 159 eKr) komöödiad, Cato Vanema traktaat (234 - 149 eKr), samuti fragmente teiste autorite teostest. 1. sajandi keel. eKr e - klassikaline ladina keel (kuldne ladina) - rikas teadusliku, filosoofilise, poliitilise ja tehnilise terminoloogia poolest. Just sel ajal saavutas ladina keel oma kõrgeima arengu Gaius Julius Caesari (100–44 eKr), Mark Tullius Cicero (106–43 eKr), Publius Virgil Maroni (70–19 eKr), Publius Ovidiuse teostes. Nason (43 pKr – umbes 18 pKr) ja teised Rooma kirjanikud.
+Antiikühiskonna allakäigu, Rooma impeeriumi lagunemise ja uute rahvaste tekkega annab ladina rahvakeelne konekeel tõuke romaani keelte kujunemisele: itaalia, prantsuse, hispaania, portugali, rumeenia jne.
+Kuigi ladina keel lakkas osade inimeste jaoks olemast suhtlusvahend tervikuna, säilis see teaduse, osalt kirjanduse ja ametlike aktide kirjakeelena. Selles mõttes ületas ladina keel kaugelt Rooma impeeriumi piirid.
+Renessansiajal (XIV – XVI sajand) muutub ladina keelest rahvusvaheline teaduse ja diplomaatia keel, koolides õppeaine. Kuni XVIII sajandini peaaegu kõik teaduslikud tööd on kirjutatud ladina keeles. Näiteks piisab, kui tuua vaid mõned teadlaste nimed: Erasmus Rotterdamist (1466 - 1536) Hollandis, Nicolaus Copernicus (1473 - 1535) Poolas, Thomas More (1478 - 1535), Francis Bacon (1561 - 1626). ) ja Isaac Newton (1643–1727) Inglismaal.
+Ladina keel jäi paljudeks sajanditeks teaduse ja diplomaatia, koolide ja kirikute, õigusteaduse jne keeleks. Eelkõige tuleb rõhutada, et ladina keel oli rahvusvaheline meditsiinikeel. Vene keeles on palju ladina päritolu sõnu, näiteks: autor, jurist, tegu, tegevus, polikliinik, autor, tunnistus, publik, diktaat, direktor, arst, dotsent, eksam, efekt, impeerium, instituut, instrument, komisjon , kompromiss, kokkuvõte , põhiseadus, konverents, kultuur, labor, rida, kirjandus, miinus, notar, objekt, pluss, ametikoht, edusammud, professor, protsess, rektor, vabariik, sanatoorium, solist, üliõpilane, ülikool, teaduskond, föderatsioon, finaal ja paljud teised.
+Ladina keel jääb endiselt teadusliku ja tehnilise terminoloogia hariduse allikaks."
+                       FontSize="15"
+                       TextColor="#5F4227"
+                         Opacity="0.8"
+                       HorizontalOptions="Start" />
+                <Label Text="Ladina keele lühiajalugu ja selle roll maailmakultuuri arengus"
+                       FontSize="30"
+                       FontAttributes="Bold"
+                       Opacity="0.8"
+                       TextColor="Black"
+                       HorizontalOptions="Fill"
+                       Margin="0,30,0,0"/>
+
+                <Label Text="Ladina keel (Lingua Latina) on indoeuroopa perekonna keel. Oma nime sai see latiinlaste hõimu järgi, kes sajandi alguses eKr. asustas väikest Kesk-Itaalia piirkonda – Latiumit. Aastal 753 eKr asutatud Latiumi peamine linn Rooma muudetakse pidevate sõdade tulemusena linnriigist orjaimpeeriumi pealinnaks. Ladina keel sai ametlikuks keeleks suurel alal Euroopas Vahemere kaldalt Atlandi ookeanini, samuti Põhja-Aafrikas ja osades Aasias Vahemere rannikust Kaukaasia mägede ja Eufrati jõeni.
+Kreeka vallutamisega Rooma poolt (2. sajand eKr) toimub ladina ja kreeka keelte ja kultuuride vastastikune rikastumine. Ladina keel laenas märkimisväärsel hulgal kreekakeelseid sõnu, aga ka kreeka meditsiiniterminoloogiat, mille rajajaks oli arst Hippokrates. Väljatöötamise käigus muudeti mõned kreekakeelsed meditsiiniterminid latiniseeritud, näiteks: kolju - kolju, arteri - arter, teraapia - ravi, samas kui mõned neist säilitasid kreekakeelsed lõpud, näiteks diabeet - diabeet, düspnoe - õhupuudus. .
+Ladina ja vanakreeka keel on endiselt peamised rahvusvahelised allikad uute meditsiiniterminite kunstlikuks loomiseks tänapäevastes keeltes. Haiguste nimetused, nende sümptomid, anatoomiline nomenklatuur, ravimite nimetused jne. - need on kõik ladina ja kreeka päritolu sõnad.
+Rohkem kui poolteist tuhat aastat oli ladina keel Euroopa jaoks kultuuri ja teaduse, eriti meditsiini keel. Euroopas loodi peaaegu tuhat aastat kestnud keskaja ajalugu ulatuslikku ladinakeelset kirjandust. See hõlmab arvukalt ajaloolisi kroonikaid, romaane, luuletusi, teaduslikke, filosoofilisi ja teoloogilisi traktaate. Koos sellega moodustati kõnekeele ladina ja kohalike murrete segust iseseisvad rahvuskeeled, mida tuntakse romaani nime all.
+Renessansi ajastu (renessanss) avas järgmistele põlvkondadele palju kirjandusteoseid, monumentaalskulptuuri monumente. Sel perioodil tungis kõigisse Euroopa keeltesse suur ladina sõnavara mõju, mis puudutas peamiselt ühiskonna vaimuelu, selle kultuuri, teadust ja meditsiini. Just sel ajastul pandi alus rahvusvahelisele ladinakeelsele meditsiiniterminoloogiale.
+Meditsiiniline haridus on võimatu ilma ladina keele põhitõdesid omandamata. Ladina keele õpe omab suurt tähtsust keskastme eriarsti koolitamisel, kuna aitab teadlikult omastada ja mõista ladina-kreeka päritolu meditsiinitermineid, millega ta kohtub ja oma praktilises tegevuses kasutab. Juba iidsetest aegadest on arstid teadnud järgmist ladina vanasõna: Invia est in medicina via sine lingua Latina – Läbimatu tee meditsiinis ilma ladina keeleta. See väide kehtib isegi meie ajal."
+                       FontSize="15"
+                       TextColor="#5F4227"
+                       Opacity="0.8"
+                       HorizontalOptions="Fill" />
+
+                <Label Text="Mõju teistele keeltele"
+                       FontSize="30"
+                       FontAttributes="Bold"
+                       TextColor="Black"
+                       Opacity="0.8"
+                       HorizontalOptions="Fill"
+                       Margin="0,30,0,0"/>
+
+                <Label Text="Ladina keel kõnekeelsel kujul ehk vulgaarladina keel sai aluseks vastloodud rahvuskeeltele, mis ühendati romaani keeli ühendava nimetuse alla. Nende keelte hulka kuulub itaalia keel, mis tekkis Apenniini poolsaare ruumis ladina keele ümberkujundamise protsesside tulemusena, endises Gallia territooriumil arenenud prantsuse keel, portugali ja hispaania keel moodustuvad territooriumil. Pürenee poolsaar, rumeenia - Rooma Dacia (praegu Rumeenia) piirkonna ruumis, moldaavia ja ka mõned teised, millest sardiinia keel väärib erilist tähelepanu, kuna on teistest tuntud romaani keeltest kõige lähedasem õigeusu ladina keelele.
+
+Selle rühma keelte sarnase päritoluga on tänapäeval nende vahel palju olulisi erinevusi. Seda võib seletada asjaoluga, et ladina keel tungis vallutatud maadele mitu sajandit, mille jooksul ta ise muutus suuresti ning suhtles kohalike murrete ja murretega. Tõsise jälje tärkavatele sugulaskeeltele jättis nende maade ajaloolise arengu erinevus, millel need pika aja jooksul arenesid.
+
+Samal ajal sisaldavad kõik romaani rühma keeled oma sõnavaras ja lisaks, kuigi vähesel määral, morfoloogias ladina keele tunnuseid. Näiteks prantsuse keele verbaalne süsteem esindab vulgaarladina keeles juba välja toodud verbivormide edasist arengut. Prantsuse kirjakeele kujunemisel mõjutas seda oluliselt ladina keele süntaks, mille mõjul kujunesid prantsuse keele kokkuleppereeglid, aga ka infinitiivipöörded ja isoleeritud osalusvormid."
+                       FontSize="15"
+                       TextColor="#5F4227"
+                       Opacity="0.8"
+                       HorizontalOptions="Fill" />
+
+                <ListView x:Name="latinPhrasesListView"
+                          Margin="0,15,0,0">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding}"
+                                      TextColor="Black" />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                
+            </StackLayout>
+        </ScrollView>
+        
+        
+    </Grid>
+</ContentPage>

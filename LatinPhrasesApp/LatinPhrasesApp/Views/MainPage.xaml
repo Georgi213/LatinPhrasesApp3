@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<FlyoutPage xmlns="http://xamarin.com/schemas/2014/forms"
+            xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+            xmlns:views="clr-namespace:LatinPhrasesApp.Views"
+            xmlns:local="clr-namespace:LatinPhrasesApp.Views"
+            
+            x:Class="LatinPhrasesApp.Views.MainPage">
+  
+    <FlyoutPage.Resources>
+        <ResourceDictionary>
+            <Style TargetType="Label">
+                <Setter Property="TextColor" Value="#4A4A4A" />
+            </Style>
+            <Style TargetType="Button">
+                <Setter Property="BackgroundColor" Value="#4A4A4A" />
+                <Setter Property="TextColor" Value="White" />
+                <Setter Property="Margin" Value="20" />
+                <Setter Property="CornerRadius" Value="5" />
+                <Setter Property="FontSize" Value="18" />
+                <Setter Property="FontAttributes" Value="Bold" />
+            </Style>
+        </ResourceDictionary>
+    </FlyoutPage.Resources>
+
+    <FlyoutPage.Flyout>
+        <local:MenuPage />
+    </FlyoutPage.Flyout>
+
+    <FlyoutPage.Detail>
+        
+        <NavigationPage x:Name="NavigationPageInstance">
+            <x:Arguments>
+                <local:HomePage />
+            </x:Arguments>
+            <NavigationPage.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource">
+                    <On Platform="Android" Value="navicon.png" />
+                    <On Platform="iOS" Value="navicon" />
+                </OnPlatform>
+            </NavigationPage.Icon>
+           
+            <NavigationPage.BarBackgroundColor>
+                <OnPlatform x:TypeArguments="Color">
+                    <On Platform="Android" Value="#4A4A4A" />
+                    <On Platform="iOS" Value="#4A4A4A" />
+                </OnPlatform>
+            </NavigationPage.BarBackgroundColor>
+            <NavigationPage.BarTextColor>
+                <OnPlatform x:TypeArguments="Color">
+                    <On Platform="Android" Value="White" />
+                    <On Platform="iOS" Value="White" />
+                </OnPlatform>
+            </NavigationPage.BarTextColor>
+        </NavigationPage>
+    </FlyoutPage.Detail>
+</FlyoutPage>

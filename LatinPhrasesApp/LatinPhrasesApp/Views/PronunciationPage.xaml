@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LatinPhrasesApp.Views.PronunciationPage">
+    <RelativeLayout>
+        <Image Source="papyrus1.jpg"
+               Aspect="AspectFill"
+               RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+               RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}" />
+
+        <ScrollView RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                    RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
+            <StackLayout Padding="30">
+                <Label Text="Tähestik"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       TextColor="Black"
+                       HorizontalOptions="Start"
+                       Margin="0,20,0,0"/>
+
+                <Grid>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+
+                    <!-- Add your labels here, specifying the Grid.Row and Grid.Column -->
+                    <Label Text="A a (а)*" Grid.Row="0" Grid.Column="0" TextColor="Black" FontSize="15"/>
+                    <Label Text="B b (b)" Grid.Row="1" Grid.Column="0" TextColor="Black" FontSize="15" />
+                    <Label Text="C c - enne e, i, y, ae, oe hääldatakse (c), muudel juhtudel - (k)D d - (d)" Grid.Row="2" Grid.Column="0" TextColor="Black" FontSize="15"/>
+                    <Label Text="E e - (uh)*" Grid.Row="3" Grid.Column="0" TextColor="Black" FontSize="15" />
+                    <Label Text="F f - (f)*" Grid.Row="4" Grid.Column="0" TextColor="Black" FontSize="15"/>
+                    <Label Text="G g - (g)" Grid.Row="5" Grid.Column="0" TextColor="Black" FontSize="15" />
+                    <Label Text="H h - (h)" Grid.Row="6" Grid.Column="0" TextColor="Black" FontSize="15"/>
+                    <Label Text="I i - (i); (th) - enne täishäälikuid." Grid.Row="7" Grid.Column="0" TextColor="Black" FontSize="15" />
+                    <Label Text="K k - (k) - harva leidub kreeka laensõnades." Grid.Row="8" Grid.Column="0" TextColor="Black" FontSize="15"/>
+                    <Label Text="L l - (l)" Grid.Row="9" Grid.Column="0" TextColor="Black" FontSize="15" />
+                    <Label Text="M m - (m)*" Grid.Row="10" Grid.Column="0" TextColor="Black" FontSize="15"/>
+                    <Label Text="N n - (n)" Grid.Row="11" Grid.Column="0" TextColor="Black" FontSize="15" />
+                    <Label Text="O o - (o)" Grid.Row="12" Grid.Column="0" TextColor="Black" FontSize="15" />
+                    <Label Text="P p - (p)" Grid.Row="13" Grid.Column="0" TextColor="Black" FontSize="15" />
+                    <Label Text="Q q - (k)*" Grid.Row="14" Grid.Column="0" TextColor="Black" FontSize="15" />
+                    <Label Text="R r - (р)" Grid.Row="15" Grid.Column="0" TextColor="Black" FontSize="15" />
+                    <Label Text="S s - (с); (z) - vokaalide vahel.*" Grid.Row="16" Grid.Column="0" TextColor="Black" FontSize="15" />
+                    <Label Text="T t - kombinatsioonis ti + täishäälik loetakse (ci) + täishäälik, kui ti ees ei ole s, t, x." Grid.Row="17" Grid.Column="0" TextColor="Black" FontSize="15" />
+                    <Label Text="U u - (u)" Grid.Row="18" Grid.Column="0" TextColor="Black" FontSize="15" />
+                    <Label Text="V v - (v)" Grid.Row="19" Grid.Column="0" TextColor="Black" FontSize="15" />
+                    <Label Text="X x - (ks)*" Grid.Row="20" Grid.Column="0" TextColor="Black" FontSize="15" />
+                    <Label Text="Y y - (i) - kreeka laenudes." Grid.Row="21" Grid.Column="0" TextColor="Black" FontSize="15" />
+                    <Label Text="Z z - (z) - kreeka laenudes" Grid.Row="22" Grid.Column="0" TextColor="Black" FontSize="15" />
+                   
+                    <!-- ... -->
+                </Grid>
+                <Label Text="Märkmed"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       TextColor="Black"
+                       HorizontalOptions="FillAndExpand"
+                       Margin="0,20,0,0"/>
+
+                <Label Text="1. Enamikku ladina tähestiku tähti hääldatakse samamoodi nagu erinevates Lääne-Euroopa keeltes, kuid mõningaid tähti nendes keeltes nimetatakse erinevalt ladina keelest; näiteks tähte h nimetatakse saksa keeles 'ha', prantsuse keeles 'ash', inglise keeles 'h' ja ladina keeles 'ga'. Tähte j prantsuse keeles nimetatakse 'zhi', inglise keeles - 'jay' ja ladina keeles - iot. Ladina tähte 'c' inglise keeles nimetatakse si jne.
+
+2. Tuleb meeles pidada, et sama täht võib nendes keeltes tähistada ebavõrdset kõla. Näiteks tähega g tähistatud heli hääldatakse ladina keeles kui [g] ning prantsuse ja inglise keeles enne e, i - kui [g] või [j]; inglise keeles loetakse j kui [j].
+
+3. Ladina kirjapilt on foneetiline, see taasesitab häälikute tegelikku hääldust. Võrdle: lat. latina [latina], ing. ladina [laetin] – ladina keel.
+
+Erinevus on eriti märgatav ladina ja inglise keele vokaalide võrdlemisel. Ladina keeles hääldatakse peaaegu kõiki täishäälikuid alati samamoodi nagu vene keeles vastavaid täishäälikuid.
+
+4. Reeglina ei ladina, vaid muudest keeltest (kreeka, araabia, prantsuse jne) pärit nimed latiniseeritud, see tähendab, et need on koostatud vastavalt riigi foneetika ja grammatika reeglitele. ladina keel."
+                       FontSize="15"
+                       TextColor="#5F4227"
+                       HorizontalOptions="FillAndExpand" />
+
+                <Label Text="Täishäälikute (ja kaashääliku j) lugemine"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       TextColor="Black"
+                       HorizontalOptions="FillAndExpand"
+                       Margin="0,20,0,0"/>
+
+                <Label Text="'E e' kõlab nagu [e]: vertebra [ve'rtebra] - selgroolüli, medianus [medianus] - mediaan. Erinevalt venelastest ei pehmene ükski ladina kaashäälik enne heli [e]: anterior [ante'rior] - ees, arteria [arte'ria] - arter. 'I i' kõlab nagu [ja]: inferior [infe'rior] - madalam, internus [inte'rnus] - sisemine. Sõna või silbi alguses, enne täishäälikuid, loetakse i-d häälelise kaashäälikuna [th]: iugularis [yugula'ris] - jugulaar, iunctura [yunktu'ra] - seos, maior [ma'yor] - suur, iuga [yu'ga] – kõrgus. Nendel positsioonidel kasutatakse tänapäeva meditsiiniterminoloogias i asemel J j-tähte – iot: jugularis [yugula'riis], juncture [yunktu'ra], major [ma'yor], juga [yu'ga]. J-tähte ei kirjutata ainult kreeka keelest laenatud sõnades, kuna selles ei olnud heli [th]: iatria [ia'triya] - tervendav, iodum [io'dum] - jood. NB! Helide [ya], [yo], [ye], [yu] edastamiseks kasutatakse tähekombinatsioone ja, jo, je, ju. Y y (upsilon), prantsuse keeles 'y', kõlab nagu [ja]: tympanum [ti'mpanum] - trumm; gyrus [gi'rus] – aju keerdkäik. Tähte 'upsilon' kasutatakse ainult kreeka päritolu sõnades. Selle võtsid kasutusele roomlased, et edastada kreeka tähestiku tähte upsilon, mida loeti saksakeelseks [ja]. Kui kreeka sõna kirjutati läbi i (kreeka iota), loeti [ja], siis transkribeeriti see ladina keelde läbi i. NB! Meditsiiniliste terminite õigeks kirjutamiseks peate teadma mõningaid kõige levinumaid kreeka eesliiteid ja juuri, milles on kirjutatud 'upsilon': dys- [dis-] - eesliide, mis annab terminile rikkumise, düsfunktsiooni tähenduse. funktsioon: düsostoos (dys + osteon - 'luu') - düsostoos - luu moodustumise häire; hüpo- [hüpo-] - 'all', 'all': hüpoderma (hüpo + + derma - 'nahk') - hüpodermis - nahaalune kude, hüpogastrium (hüpo- + mao - 'kõht', 'kõht') - hüpogastrium - hüpogastrium; hüper– [hüper-] - 'üleval', 'üle': hüperostoos (hüper + + osteon - 'luu') - hüperostoos - muutumatu luukoe patoloogiline vohamine; syn-, sym– [syn-, sym-] - 'koos', 'koos', 'koos': sünostoos (syn + osteon - 'luu') - sünostoos - luude ühendus luukoe kaudu; mu (o) - [myo-] - sõna juur, mis näitab seost lihastega: müoloogia (myo + logos - 'sõna', 'õpetus') - müoloogia - lihaste uurimine; phys- [phys-] - sõna juur, mis näitab anatoomilises mõttes seost mingis kohas kasvavaga: diaphysis - diaphysis (osteoloogias) - toruluu keskosa."
+                       FontSize="15"
+                       TextColor="#5F4227"
+                       HorizontalOptions="FillAndExpand" />
+
+                <Label Text="Diftongid (digraafid)"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       TextColor="Black"
+                       HorizontalOptions="FillAndExpand"
+                       Margin="0,20,0,0"/>
+
+                <Label Text="Lisaks lihthäälikutele [a], [e], [i], [o], [i] olid ladina keeles ka kahevokaalilised häälikud (diftongid) ae, oe, ai, her. Klassikalisel ajastul hääldati neid kõiki mittesilbilise teise elemendiga. Hiljem hakati diftonge ae [sõnast ai] ja oe [sõnast oi] hääldama ühe häälikuna ehk muutusid kahe tähega esindatud monoftongideks, nn digraafideks.
+
+Digraafi ae loetakse kui [e]: vertebrae [ve'rtebre] - selgroolüli, reritonaeum [peritone'um] - kõhukelme.
+
+Digraaf oe kõlab nagu [e], täpsemalt nagu saksa o või prantsuse oe: foetor [fetor] - halb lõhn.
+
+Enamikul juhtudel kasutasid meditsiinilises mõttes kasutatavad diftongid ae ja oe kreeka diftonge ai ja oi ladina keeles. Näiteks: ödeem [ede'ma] - turse, oesorhagus [eso'fagus] - söögitoru.
+
+Kui kombinatsioonides ae ja oe kuuluvad vokaalid erinevatesse silpidesse, st ei moodusta diftongi, siis asetatakse e kohale eraldusmärk (``) ja iga vokaali hääldatakse eraldi: dip1oe [diploe] - diploe - käsnjas kolju lamedate luude aine; aёr [õhk] – õhk."
+                       FontSize="15"
+                       TextColor="#5F4227"
+                       HorizontalOptions="FillAndExpand" />
+
+
+                <Label Text="Konsonantide lugemise tunnused"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       TextColor="Black"
+                       HorizontalOptions="FillAndExpand"
+                       Margin="0,20,0,0"/>
+
+
+
+                <Label Text="Lubatud on tähe 'C with' topeltlugemine: [k] või [c].
+
+Kuidas [k] loetakse enne täishäälikuid a, o ja enne kõiki kaashäälikuid ja sõna lõpus: caput [ka'put] - pea, luude ja siseorganite pea, cubitus [ku'bitus] - küünarnukk , clavicula [klyavi'kulya ] - rangluu, crista [kri'sta] - hari.
+
+Kuidas [ts] loetakse vokaalide e, i, y ja digraafide ae, oe ees: cervicalis [cervika'lis] - emakakael, sisselõige [incizu'ra] - sisefilee, coccyngeus [koktsinge'us] - coccygeus, coelia [ tse'lia ] - kõht.
+
+“Н h” loetakse ukraina hääliku [g] või saksa [h] (haben): homo [homo] - inimene, hnia'tus [gna'tus] - tühimik, lõhe, õlavarreluu [gume'rus ] - õlavarreluu.
+
+'K k' on väga haruldane, peaaegu eranditult mitte-ladina päritolu sõnades, juhtudel, kui peate häält [k] hoidma enne helisid [e] või [ja]: kyphosis [kypho'zis] - kyphosis, kinetocytus [kine'to -citus] - kinetocyte - liikuv rakk (kreeka päritolu sõnad).
+
+'L l' loetakse alati pehmelt, nagu prantsuse ja saksa keeles: labium [la'bium] - huul, lumbalis [lumba'lis] - nimme, pelvinus [pel-vi'nus] - vaagna.
+
+'S s' on topeltnäit - [s] või [s]. Kuidas [s] enamasti loetakse: sulcus [su'lkus] - vagu, os sacrum [os sa'krum] - ristluu, ristluu; dorsum [do'rsum] – selg, selg, taga. Kuidas [h] loetakse vokaalidevahelises asendis: incisura [incizu'ra] - sisefilee, vesica [vezi'ka] - mull. Topelt-s kõlab nagu [s]: fossa [fo'csa] - süvend, ossa [o'ssa] - luud, processus [proce'ssus] - protsess. Täishäälikute ja kaashäälikute vahelises asendis m, n kreeka päritolu sõnades loetakse s kui [z]: chiasma [chia'zma] - rist, platysma [plyati'zma] - kaela nahaalune lihas.
+
+'X x' nimetatakse topeltkonsonandiks, kuna see esindab häälikukombinatsiooni [ks]: radix [ra'dix] on juur, extremitas [ekstre'mitas] on lõpp.
+
+'Z z' esineb kreeka päritolu sõnades ja kõlab nagu [h]: zygomaticus [zygoma 'ticus] – sigomaatiline, trapezius [trapets] – trapetsikujuline."
+                       FontSize="15"
+                       TextColor="#5F4227"
+                       HorizontalOptions="FillAndExpand" />
+
+
+                <Label Text="Stressi reegel"
+                       FontSize="20"
+                       FontAttributes="Bold"
+                       TextColor="Black"
+                       HorizontalOptions="FillAndExpand"
+                       Margin="0,20,0,0"/>
+
+
+
+                <Label Text="1. Rõhku ei panda kunagi viimasele silbile. Kahesilbilistes sõnades asetatakse see esimesele silbile.
+
+2. Kolme- ja mitmesilbilistes sõnades asetatakse rõhk eelviimasele või kolmandale silbile lõpust.
+
+Rõhuasetus oleneb eelviimase silbi kestusest. Kui eelviimane silp on pikk, siis langeb rõhk sellele ja kui lühike, siis rõhk kolmandale silbile lõpust.
+
+Seetõttu on rohkem kui kahte silpi sisaldavates sõnades rõhu asetamiseks vaja teada eelviimase silbi pikkuskraadi või lühiduse reegleid."
+                       FontSize="15"
+                       TextColor="#5F4227"
+                       HorizontalOptions="FillAndExpand" />
+                <ListView x:Name="latinPhrasesListView"
+                          Margin="0,10,0,0">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <TextCell Text="{Binding}"
+                                      TextColor="Black" />
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </ScrollView>
+    </RelativeLayout>
+</ContentPage>

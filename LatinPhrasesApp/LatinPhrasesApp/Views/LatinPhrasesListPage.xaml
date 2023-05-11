@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LatinPhrasesApp.Views.LatinPhrasesListPage"
+             xmlns:behaviors="clr-namespace:LatinPhrasesApp.Behaviors"
+             Title="Ladinakeelsed fraasid"
+               xmlns:local="clr-namespace:LatinPhrasesApp"
+              x:Name="ThisPage"
+             BackgroundColor="White">
+
+    <ScrollView RelativeLayout.WidthConstraint="{ConstraintExpression Type=RelativeToParent, Property=Width}"
+                    RelativeLayout.HeightConstraint="{ConstraintExpression Type=RelativeToParent, Property=Height}">
+       
+        <StackLayout>
+            <SearchBar x:Name="PhraseSearchBar" Placeholder="Fraaside otsing" Grid.Column="0" Text="{Binding SearchText, Mode=TwoWay}"/>
+            <ListView x:Name="PhrasesListView" ItemsSource="{Binding Phrases}" HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <Grid>
+                                <Image Source="papyrus2.jpg" Aspect="AspectFill" />
+                                <Grid Padding="10">
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto"/>
+                                        <ColumnDefinition Width="*"/>
+                                    </Grid.ColumnDefinitions>
+                                <Button Grid.Column="0" Margin="130,0,0,0" Text="&#x2764;" FontSize="27" BackgroundColor="transparent"
+                    Command="{Binding BindingContext.AddFavoriteCommand, Source={x:Reference Name=ThisPage}}"
+                    CommandParameter="{Binding .}">
+                                    <Button.Behaviors>
+                                        <behaviors:HeartButtonBehavior />
+                                    </Button.Behaviors>
+                                </Button>
+
+
+
+
+
+                                    <StackLayout Grid.Column="1" Orientation="Vertical">
+                                        <Grid>
+                                            <BoxView x:Name="ShadingBox" Opacity="0" BackgroundColor="Black" IsVisible="False" />
+                                        <StackLayout Margin="-98,0,0,0">
+                                            <Label Text="{Binding Latin}" FontAttributes="Bold" FontSize="15" HorizontalOptions="Start" VerticalOptions="Center" />
+                                            <Label Text="{Binding Estonian}" LineBreakMode="WordWrap" WidthRequest="200" FontSize="14" Margin="-7,0,0,0" HorizontalOptions="Start" VerticalOptions="Center" />
+                                        </StackLayout>
+                                        </Grid>
+
+                                        <StackLayout.GestureRecognizers>
+                                                
+                                                <TapGestureRecognizer NumberOfTapsRequired="1"
+                                  Command="{Binding BindingContext.CopyPhraseCommand, Source={x:Reference ThisPage}}"
+                                  CommandParameter="{Binding Latin}" 
+                                             Tapped="OnTapped" />
+                                            </StackLayout.GestureRecognizers>
+                                            
+                                            
+                                        </StackLayout>
+
+                                        
+                                    
+
+
+
+                                    <ImageButton Grid.Column="2" Source="share_icon.png" Margin="45,-10,0,60"  WidthRequest="0" HeightRequest="0"  Aspect="AspectFit"  BackgroundColor="Transparent"
+                                     
+        Command="{Binding BindingContext.ShareCommand, Source={x:Reference Name=ThisPage}}"
+        CommandParameter="{Binding .}" />
+                                </Grid>
+                            </Grid>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </StackLayout>
+    </ScrollView>
+</ContentPage>

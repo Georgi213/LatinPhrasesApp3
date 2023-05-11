@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LatinPhrasesApp.Views.AboutPage"
+             Title="Umbes"
+             BackgroundColor="White">
+    <ContentPage.Content>
+        <StackLayout Padding="20">
+            <Label Text="Versioon 1.0" FontAttributes="Bold" FontSize="Large" />
+            <Label Text="Viimane värskendus: 10. mai 2022" />
+            <Label Text="Arendaja: Georgi Blinov" />
+            <Label Text="E-post: georgijblinov096@gmail.com" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

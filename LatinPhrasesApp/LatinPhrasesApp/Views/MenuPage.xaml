@@ -1,0 +1,58 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LatinPhrasesApp.Views.MenuPage"
+             Title="Menu">
+ 
+    <ContentPage.Content>
+           
+                <StackLayout BackgroundColor="DarkGray">
+            <Grid BackgroundColor="DarkGreen"  >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="Auto" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="Auto" />
+                        <RowDefinition Height="Auto" />
+                    </Grid.RowDefinitions>
+                    <Image Grid.RowSpan="2" Source="logo.png" HeightRequest="60" WidthRequest="60" Margin="20,10,10,10" />
+                <Label Grid.Column="1" Grid.Row="0" Text="Ladinakeelsed fraasid" FontSize="Large"  FontAttributes="Bold" TextColor="White" Margin="0,20,20,0 " />
+                <Label Grid.Column="1" Grid.Row="1" Text="Uurige &amp; Jagage" FontSize="Small" TextColor="White" Margin="0,0,20,10" />
+                </Grid>
+                
+                <ListView x:Name="FlyoutMenuListView" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <Grid>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="Auto" />
+                                        <ColumnDefinition Width="*" />
+                                    </Grid.ColumnDefinitions>
+                                    <Image Source="{Binding Icon}" WidthRequest="40" HeightRequest="40" Margin="10" />
+                                    <Label Grid.Column="1"  Text="{Binding Title}" FontSize="Medium" VerticalOptions="Center" Margin="10,0,0,0" />
+                                </Grid>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+
+            <ScrollView>
+                <StackLayout VerticalOptions="Start" Margin="1,2,8,109555" >
+
+                <Button Text="Keele ajalugu" Clicked="OnHomeButtonClicked"  BackgroundColor="DarkSlateGray"/>
+                <Button Text="Hääldus" Clicked="OnPronunciationButtonClicked" BackgroundColor="DarkSlateGray"/>
+                <Button Text="Autorite nimekiri" Clicked="OnAuthorsListButtonClicked" BackgroundColor="DarkSlateGray"/>
+                <Button Text="Lemmikfraasid" Clicked="OnFavoriteLatinPhrasesButtonClicked" BackgroundColor="DarkSlateGray"/>
+                <Button Text="Ladinakeelsete fraaside loend " Clicked="OnLatinPhrasesListButtonClicked" BackgroundColor="DarkSlateGray" />
+                <Button Text="Minu ladinakeelsed fraasid" Clicked="OnMyLatinPhrasesButtonClicked" BackgroundColor="DarkSlateGray"/>
+                <Button Text="Minu ladinakeelsed autorid" Clicked="OnMyAuthorsButtonClicked" BackgroundColor="DarkSlateGray"/>
+                <Button Text="Ladinakeelsed fraasid tähthaaval" Clicked="OnLetterLatinPhrasesButtonClicked" BackgroundColor="DarkSlateGray"/>
+            </StackLayout>
+            </ScrollView>
+        </StackLayout>
+      
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="LatinPhrasesApp.Views.EditAuthorPage">
+    <StackLayout Margin="20">
+
+        <Label Text="Nimi" />
+        <Entry x:Name="Name" Placeholder="Sisesta autori nimi" />
+        <Label Text="Ladina" />
+        <Entry x:Name="Latin" Placeholder="Sisesta ladina fraas" />
+
+
+        <Image x:Name="Portrait" HeightRequest="100" WidthRequest="100"/>
+        <Button Text="Vali pilt" Clicked="OnSelectImageButtonClicked" />
+
+
+        <Button Text="Salvesta" Clicked="OnSaveButtonClicked" />
+    </StackLayout>
+</ContentPage>
