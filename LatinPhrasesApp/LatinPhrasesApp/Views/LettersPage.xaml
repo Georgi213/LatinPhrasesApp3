@@ -9,6 +9,7 @@
     JustifyContent="SpaceAround"
     AlignItems="Center"
     HorizontalOptions="Center"
+        
     VerticalOptions="Center">
             <Frame WidthRequest="40" HeightRequest="40" BorderColor="Black" Padding="0" CornerRadius="0">
                 <Label Text="A" FontSize="30" VerticalOptions="Center" HorizontalOptions="Center">

@@ -65,7 +65,7 @@
 
 
 
-                                    <ImageButton Grid.Column="2" Source="share_icon.png" Margin="90,-39,0, 30"  WidthRequest="0" HeightRequest="0"  Aspect="AspectFit"  BackgroundColor="Transparent"
+                                    <ImageButton Grid.Column="2" Source="share_icon.png" Margin="70,-39,0, 30"  WidthRequest="0" HeightRequest="0"  Aspect="AspectFit"  BackgroundColor="Transparent"
                                      
         Command="{Binding BindingContext.ShareCommand, Source={x:Reference Name=ThisPage}}"
         CommandParameter="{Binding .}" />

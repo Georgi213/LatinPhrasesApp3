@@ -46,16 +46,17 @@ namespace LatinPhrasesApp.ViewModels
         private readonly MyLatinPhrasesPage _page;
         public ICommand ShareCommand { get; }
         private IEnumerable<LatinPhrase> _allPhrases;
-        public ICommand DeletePhraseCommand { get; set; }
+        public ICommand DeleteAuthorCommand { get; set; }
         private MyLatinPhrasesViewModel _viewModel;
         public MyAuthorsViewModel()
         {
             LoadAuthors();
             FilterAuthorsCommand = new Xamarin.Forms.Command<string>(FilterAuthors);
+            
             AddAuthorCommand = new Command(async () =>
             {
                 var addAuthorPage = new AddAuthorPage(AddAuthor);
-                DeletePhraseCommand = new Xamarin.Forms.Command<LatinPhrase>(DeleteAuthor);
+                DeleteAuthorCommand = new Xamarin.Forms.Command<LatinPhrase>(DeleteAuthor);
 
                 var addAuthorNavigationPage = new NavigationPage(addAuthorPage);
                 await Application.Current.MainPage.Navigation.PushModalAsync(addAuthorNavigationPage);
@@ -119,14 +120,14 @@ namespace LatinPhrasesApp.ViewModels
                 SaveAuthors();
             }
         }
-        public async void DeleteAuthor(LatinPhrase phrases)
+        public async void DeleteAuthor(LatinPhrase author)
         {
             bool confirmDelete = await Application.Current.MainPage.DisplayAlert("Kustuta autor", "Kas olete kindel, et soovite selle autori kustutada?", "Jah", "ei");
 
-            if (confirmDelete)
+            if (confirmDelete)//delete
             {
 
-                Phrases.Remove(phrases);
+                Phrases.Remove(author);
                 SaveAuthors();
             }
         }

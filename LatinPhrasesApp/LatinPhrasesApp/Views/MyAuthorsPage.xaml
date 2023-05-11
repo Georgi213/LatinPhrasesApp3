@@ -48,10 +48,10 @@
                                         <ColumnDefinition Width="Auto"/>
                                         <ColumnDefinition Width="*"/>
                                     </Grid.ColumnDefinitions>
-                                <Button Grid.Column="1"  Padding="3"  Margin="-240,0,0,0" ImageSource="add_icon" FontSize="27"  BackgroundColor="transparent"
+                                <Button Grid.Column="1"  Padding="3"  Margin="-200,0,0,0" ImageSource="add_icon" FontSize="27"  BackgroundColor="transparent"
                     Command="{Binding BindingContext.AddAuthorCommand, Source={x:Reference Name=ThisPage}}"
                     CommandParameter="{Binding .}"></Button>
-                                <Button Grid.Column="2"  ImageSource="delete_icon" BackgroundColor="Transparent"  Margin="-100,0,0,0" Command="{Binding BindingContext.DeleteAuthorCommand, Source={x:Reference PhrasesListView}}" CommandParameter="{Binding .}" HorizontalOptions="Center"/>
+                                <Button Grid.Column="2"  ImageSource="delete_icon" BackgroundColor="Transparent"  Margin="-90,0,0,0" Command="{Binding BindingContext.DeleteAuthorCommand, Source={x:Reference PhrasesListView}}" CommandParameter="{Binding .}" HorizontalOptions="Center"/>
 
 
 

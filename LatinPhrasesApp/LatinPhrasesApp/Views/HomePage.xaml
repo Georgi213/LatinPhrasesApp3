@@ -10,7 +10,7 @@
 
         <Image x:Name="PapyrusImage" Source="papyrus1.jpg" Aspect="AspectFill" />
 
-        <ScrollView Grid.Row="0" Padding="30">
+        <ScrollView Grid.Row="0" Padding="20">
           
             <StackLayout >
 
